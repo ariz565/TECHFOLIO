@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechFolio</title>
+
+   <!-- Remix icons -->
+   <link
+   href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+   rel="stylesheet"
+ />
+
+  <!-- Fonts & Images -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/0a1470e582.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./CSS/navigate.css" />
+  <link rel="stylesheet" href="./CSS/general.css" />
+  <link rel="stylesheet" href="./CSS/home.css" />
+  <link rel="stylesheet" href="./CSS/about.css" />
+  <link rel="stylesheet" href="./CSS/project.css" />
+  <link rel="stylesheet" href="./CSS/achievement.css" />
+  <link rel="stylesheet" href="./CSS/contact.css" />
+  <link rel="stylesheet" href="./CSS/media_query.css " />
+  <link rel="stylesheet" href="./CSS/style_switcher.css" />
+
+  <!-- Themes Links -->
+  <link rel="stylesheet" href="./CSS/color/color1.css" class="alternate" title="color1" />
+  <link rel="stylesheet" href="./CSS/color/color2.css" class="alternate" title="color2" disabled />
+  <link rel="stylesheet" href="./CSS/color/color3.css" class="alternate" title="color3" disabled />
+  <link rel="stylesheet" href="./CSS/color/color4.css" class="alternate" title="color4" disabled />
+  <link rel="stylesheet" href="./CSS/color/color5.css" class="alternate" title="color5" disabled />
+
+  <!-- JS -->
+  <script src="./JavaScript/main.js" defer></script>
+  <script src="./JavaScript/style.js" defer></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="./JavaScript/mail_send.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <div class="main_container">
+    <!-- Side Navigation Bar -->
+    <div class="navbar">
+      <!-- Navbar -->
+      <div class="logo">
+        <a href="#">ArizZ<span>.tech</span></a>
+      </div>
+      <div class="nav_toggle">
+        <span></span>
+      </div>
+      <ul class="nav">
+        <li>
+          <a href="#home" class="active" id="home_btn"><i class="fa fa-home"></i> Home
+          </a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa fa-user"></i> About</a>
+        </li>
+        <li>
+          <a href="#project"><i class="fa fa-list"></i> Project</a>
+        </li>
+        <li>
+          <a href="#achievement"><i class="fa fa-trophy"></i> Achievement</a>
+        </li>
+        <li>
+          <a href="#contact" id="about_me"><i class="fa fa-comment"></i> Contact</a>
+        </li>
+        <!--                 <li><a href="./Document/MagicalCV__1_.pdf" target="blank" class="resume"><i
+                            class="fa fa-file"></i> Resume</a></li> -->
+      </ul>
+    </div>
+    <!-- Main Content -->
+    <div class="main_content">
+      <!-- Home Section -->
+      <section class="home active section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padding_15">
+              <h1 class="greet">
+
+              Hi 👋 I'm<br>Mohammad Ariz Aftab </br> </h1>
+
+              <h1 class="profession">
+                I'm a <span class="domain"></span>
+              </h1>
+              <p>
+                Currently pursuing Master of Computer Application from Aligarh Muslim University. Passionate computer
+                science enthusiast driven to deliver exceptional results and make a meaningful
+                impact.
+
+              </p>
+              <button class="button" onclick="downloadResume()">Resume <i class="ri-arrow-right-line"></i></button>
+
+<script>
+  function downloadResume() {
+    window.location.href = 'Document/Ariz_Aftab.pdf';
+  }
+</script>
+
+            
+              <!-- <button class="btn">Resume <i class="ri-arrow-right-line"></i></button> -->
+              <!-- <a href="./Document/MagicalCV__1_.pdf" target="blank" class="btn hi">Resume</a> -->
+            </div>
+            <div class="home-image padding_15">
+              <div class="extra"></div>
+              <div class="profile_image">
+                <img src="./Images/homepage.svg" alt="Image" class="my_logo" />
+              </div>
+              <div class="extra"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home Section End -->
+
+
+
+
+      <!-- About Section Start -->
+      <section class="about section hidden" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd_side_15">
+              <h2>About Me</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="about-content padd_side_15">
+              <div class="row">
+                <div class="about-text padd_side_15">
+                  <h3>I'm Mohammad Ariz Aftab and <span>Tech Enthusiast</span></h3>
+                  <p>
+                    I like to learn new skills and work on different projects,
+                    I have a solid foundation in programming languages such as Java, Python, and C++. I've acquired
+                    skills in web development. My goal is to leverage my skills and education to make meaningful
+                    contributions to the tech industry and push for new ideas.
+                    As a lifelong learner, I am dedicated to staying up to date on the most recent advances in computer
+                    science. I routinely attend conferences and seminars, and I am always looking for new opportunities
+                    to learn new skills and technology.
+                  </p>
+                </div>
+             
+              <div class="row">
+                <div class="personal-info padd_side_15">
+                
+                  <div class="row">
+                    <img src="./Images/about.svg" alt="Image" class="my_image" />
+                  </div>
+                  </div>
+                
+                </div>
+
+
+
+
+                <!--SKILLS-->
+                <div class="skills padd_side_15">
+                  <div class="row">
+                    <div class="skill-item padd_side_15">
+                      <h5>Java</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 80%"></div>
+                        <div class="skill-percent">80%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd_side_15">
+                      <h5>Data Structures and Algorithms</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 70%"></div>
+                        <div class="skill-percent">60%</div>
+                      </div>
+                    </div>
+
+                    <div class="skill-item padd_side_15">
+                      <h5>Python</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 80%"></div>
+                        <div class="skill-percent">60%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd_side_15">
+                      <h5>C++</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 60%"></div>
+                        <div class="skill-percent">60%</div>
+                      </div>
+                    </div>
+
+                    <div class="skill-item padd_side_15">
+                      <h5>Web Development</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 60%"></div>
+                        <div class="skill-percent">60%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!--Education-->
+
+              <div class="row" style="justify-content: center">
+                <div class="education padd_side_15">
+                  <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline-box padd_side_15">
+                      <div class="timeline shadow-dark">
+                        <!-- Timeline Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2022-2024
+                          </h3>
+                          <h4 class="timeline-title">
+                            MCA
+                          </h4>
+                          <p class="timeline-text">
+                            Department of Computer Science
+                          </p>
+                          <h5 style="
+                                color: var(--text-bg-black-900);
+                                font-size: 15px;
+                              ">
+                            Aligarh Muslim University,Aligarh
+                          </h5>
+                          <p class="timeline-text">SGPA :8.33/10.0</p>
+                        </div>
+                        <!-- Timeline Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2017-2021
+                          </h3>
+                          <h4 class="timeline-title">Bsc (Hons) Physics</h4>
+                          <p class="timeline-text">
+                            Department of Physics
+                          </p>
+                          <h5 style="
+                                color: var(--text-bg-black-900);
+                                font-size: 15px;
+                              ">
+                            Aligarh Muslim University,Aligarh
+                          </h5>
+                          <p class="timeline-text">CGPA: 6.67/10.0</p>
+
+                        </div>
+                        <!-- Timeline Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2016
+                          </h3>
+                          <h4 class="timeline-title">Intermediate</h4>
+                          <p class="timeline-text">
+                            Sayyid Hamid Sen. Sec. School
+                          </p>
+                          <h5 style="
+                                color: var(--text-bg-black-900);
+                                font-size: 15px;
+                              ">
+                            Aligarh Muslim University,Aligarh
+                          </h5>
+                          <p class="timeline-text">Percentage: 60.8%</p>
+                        </div>
+                        <!-- Timeline Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2014
+                          </h3>
+                          <h4 class="timeline-title">High School</h4>
+
+                          <h5 style="
+                                                          color: var(--text-bg-black-900);
+                                                          font-size: 15px;
+                                                        ">
+                            Jyoti Niketan School, Azamgarh
+                          </h5>
+                          <p class="timeline-text">ICSE Board: 81.6%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section End -->
+
+      <!-- Project Section Start-->
+      <section class="project section hidden" id="project">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd_side_15">
+              <h2>Projects</h2>
+            </div>
+          </div>
+          <div class="row" style="justify-content: center">
+            <!-- Project Item -->
+            <div class="project-item padd_side_15">
+              <div class="project-item-inner">
+                <div class="icon">
+                  <i class="fa fa-laptop-code"></i>
+                </div>
+                <h4>
+                  <a href="https://github.com/ariz565/GradNetwork" target="blank">Grad Network</a>
+                </h4>
+                <p>
+                  GradNetwork is an online platform aimed to help computer science
+students and recent graduates network and collaborate. 
+                </p>
+                <p>
+                  Github:
+                  <a href="https://github.com/ariz565/GradNetwork" target="_blank">Grad Network</a>
+                </p>
+              </div>
+            </div>
+            <div class="project-item padd_side_15">
+              <div class="project-item-inner">
+                <div class="icon">
+                  <i class="fa fa-mobile-alt"></i>
+                </div>
+                <h4>
+                  <a href="https://github.com/ariz565/InfoBridge" target="blank">Info-Bridge</a>
+                </h4>
+                <p>
+                  Educational platform connecting learners with a rich database of resources. Explore a wide range of materials, including articles, tutorials, quizzes and video lectures.
+                </p>
+                <p>
+                  Github:
+                  <a href="https://github.com/ariz565/InfoBridge" target="_blank">Info-Bridge</a>
+                </p>
+                
+              </div>
+            </div>
+            <div class="project-item padd_side_15">
+              <div class="project-item-inner">
+                <div class="icon">
+                  <i class="fa fa-mobile-alt"></i>
+                </div>
+                <h4>
+                  <a href="https://github.com/ariz565/FitnessFlix" target="blank">FitnessFlix</a>
+                </h4>
+                <p>
+                  A Health Tracker Website. It is a website where you can track your daily health activities and can also get the information about the health related topics.
+                </p>
+                <p>
+                  Github:
+                  <a href="https://github.com/ariz565/FitnessFlix" target="_blank">Gitfinder</a>
+                </p>
+              </div>
+           
+            </div>
+            <!-- Project Item -->
+            <div class="project-item padd_side_15">
+              <div class="project-item-inner">
+                <div class="icon">
+                  <i class="fa fa-laptop-code"></i>
+                </div>
+                <h4>
+                  <a href="https://github.com/ariz565/TECHFOLIO-V1/">Portfolio Website</a>
+                </h4>
+                <p>
+                  I have created this basic website where everyone can check
+                  out my recent achievements.
+                </p>
+                <p>
+                  Github:
+                  <a href="https://github.com/ariz565/TECHFOLIO-V1" target="_blank">Portfolio</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Project Section End -->
+
+      <!-- Achivement Section Start -->
+      <section class="achievement section hidden" id="achievement">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd_side_15">
+              <h2>Achievements</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="achievement-heading padd_side_15">
+              <h2>My recent Achievements :</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Achievement Item -->
+            <div class="achievement-item padd_side_15">
+              <div class="achievement-item-inner">
+                <div class="icon">
+                  <i class="fa fa-trophy"></i>
+                </div>
+                <h4>
+                  <a href="./Document/codehawk.pdf" target="blank">Code Hawk</a>
+                </h4>
+                <p>
+                  Achieved 7th position out of 100 participants in the CodeHawk coding
+competition organized by Department of Computer Science, AMU
+                </p>
+              </div>
+            </div>
+            <!-- Achievement Item -->
+            <div class="achievement-item padd_side_15">
+              <div class="achievement-item-inner">
+                <div class="icon">
+                  <i class="fa fa-trophy"></i>
+                </div>
+                <h4>
+                  <a href="./Document/.pdf" target="blank">CodeKaze - Coding Ninja</a>
+                </h4>
+                <p>
+                  CodeKaze - June'23 Round 2 : AIR 23891
+                </p>
+              </div>
+            </div>
+            <!-- Achievement Item -->
+            <div class="achievement-item padd_side_15">
+              <div class="achievement-item-inner">
+                <div class="icon">
+                  <i class="fa fa-medal"></i>
+                </div>
+                <h4>
+                  <a href="./Document/.pdf"
+                    target="blank">CNPL - Coding Ninjas</a>
+                </h4>
+                <p>
+                 Coding Ninjas Premier League - AIR 860
+                </p>
+              </div>
+            </div>
+            <div class="achievement-item padd_side_15">
+              <div class="achievement-item-inner">
+                <div class="icon">
+                  <i class="fa fa-medal"></i>
+                </div>
+                <h4>
+                  <a href="./.pdf" target="blank">CodeWalkerz</a>
+                </h4>
+                <p>
+                  Recently I participated in CodeWalkerz coding competition and got AIR 200 out of 1000 participants. 
+                </p>
+              </div>
+            </div>
+            <div class="achievement-item padd_side_15">
+              <div class="achievement-item-inner">
+                <div class="icon">
+                  <i class="fa fa-medal"></i>
+                </div>
+                <h4><a href="#" target="blank">ICECI</a></h4>
+                <p>
+                  Actively contributed as a volunteer at ICECI’23, an International Conference,
+demonstrating teamwork and organizational skills.
+                </p>
+              </div>
+            </div>
+            <!-- Achievement Item -->
+          </div>
+        </div>
+      </section>
+      <!-- Achivement Section End -->
+
+      <!-- Contact Section Start -->
+      <section class="contact section hidden" id="contact">
+        <div class="container">
+          <div class="row
+          ">
+            <div class="section-title padd_side_15">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <h3 class="contact-title">Do You Have Any Queries ?</h3>
+          <h4 class="contact-sub-title">Feel Free To Contact</h4>
+          <div class="row">
+            <!-- Contact Item 
+            <div class="contact-info-item padd_side_15">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <h4>Call Us On</h4>
+              <p style="font-weight: 500">+91 639003****</p>
+            </div> -->
+            <!-- Contact Item -->
+            <div class="contact-info-item padd_side_15">
+              <div class="icon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <h4>E-Mail</h4>
+              <p>
+                <a href="mailto:gmail.com" target="_blank">mohdariz.phy@gmail.com</a>
+              </p>
+            </div>
+            <!-- Contact Item -->
+            <div class="contact-info-item padd_side_15">
+              <div class="icon">
+                <i class="fa fa-brands fa-linkedin"></i>
+              </div>
+              <h4>Linkedin</h4>
+              <p>
+                <a href="https://www.linkedin.com/in/arizaftab565/" target="_blank">arizaftab565.linkedin</a>
+              </p>
+            </div>
+            <!-- Contact Item -->
+            <div class="contact-info-item padd_side_15">
+              <div class="icon">
+                <i class="fa fa-brands fa-github"></i>
+              </div>
+              <h4>Git-Hub</h4>
+              <p>
+                <a href="https://github.com/ariz565" target="_blank">arizaftab565.github</a>
+              </p>
+            </div>
+          </div>
+          <h3 class="contact-title padd_side_15">Get In Touch</h3>
+          
+
+          <!-- Contact Forms -->
+          <div class="row"></div>
+          <div class="contact-form padd_side_15">
+            <form id="form_start" method="POST" action="mailto:mca.amu2022@gmail.com" enctype="text/plain">
+              <div class="row">
+                <div class="form-item col-6 padd_side_15">
+
+                  <div class="form-group">
+                    <input type="text" id="name" class="form-control" placeholder="Name" name="name" required />
+                  </div>
+                  
+                </div>
+                <div class="form-item col-6 padd_side_15">
+                  <div class="form-group">
+                    <input type="email" id="email" class="form-control" placeholder="Email" name="email" required />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd_side_15">
+                  <div class="form-group">
+                    <input type="text" id="subject" class="form-control" placeholder="Subject" name="subject"
+                      required />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd_side_15">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Message" name="message"
+                      required></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd_side_15">
+                  <div class="form-group">
+                    <button type="submit" class="btn" onclick="sendEmail()">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section End -->
+    </div>
+    <!-- Main Content End -->
+  </div>
+  <!-- Main Container End -->
+
+  <!-- Style Changer Start -->
+  <div class="style-switcher">
+    <div class="style-switcher-toggle s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+      <i class="fas"></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+      <span class="color1" onclick="setActiveStyle('color1')"></span>
+      <span class="color2" onclick="setActiveStyle('color2')"></span>
+      <span class="color3" onclick="setActiveStyle('color3')"></span>
+      <span class="color4" onclick="setActiveStyle('color4')"></span>
+      <span class="color5" onclick="setActiveStyle('color5')"></span>
+    </div>
+  </div>
+  <!-- Style Changer End -->
+</body>
+
+</html>
